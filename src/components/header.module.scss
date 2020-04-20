@@ -1,0 +1,27 @@
+.header {
+  padding: 1rem 0 3rem;
+}
+
+.link {
+  color: red;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 10px;
+  li {
+    margin: 20px;
+    text-decoration: none;
+  }
+}
+.nav-item {
+  color: white;
+  text-decoration: none;
+}
+.nav-item:hover {
+  color: #999999;
+}
+.active-nav-item{
+    color: green;
+}

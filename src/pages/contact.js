@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 
-const IndexPage = () => {
+const ContactPage = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -13,13 +13,13 @@ const IndexPage = () => {
       }
     }
   `)
-
   return (
-    <Layout>
-      <h1>This is home page</h1>
-      <p1>{data.site.siteMetadata.pageDescription}</p1>
-    </Layout>
+    <div>
+      <Layout>
+        <h1>Contact Me</h1>
+        <p1>{data.site.siteMetadata.pageDescription}</p1>
+      </Layout>
+    </div>
   )
 }
-
-export default IndexPage
+export default ContactPage
